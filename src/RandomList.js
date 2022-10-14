@@ -15,9 +15,9 @@ function RandomList() {
   }
 
   return (
-    <div className="italic">
+    <div>
       <Button callBack={randomNumber} />
-      <div>{numbers}</div>
+      <div>{numbers}    </div>
     </div>);
 }
 
