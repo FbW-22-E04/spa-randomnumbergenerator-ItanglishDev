@@ -5,10 +5,19 @@ function RandomList() {
 
   const [numbers, setNumbers] = useState(new Array(0))
 
+  const randomNumber = () => {
+
+    const random = Math.floor(Math.random() * 100)
+    const allNumbers = [...numbers, random]
+    setNumbers(allNumbers)
+    console.log(numbers);
+
+  }
+
   return (
-    <div class="italic">
-      <Button />
-      <div></div>
+    <div className="italic">
+      <Button callBack={randomNumber} />
+      <div>{numbers}</div>
     </div>);
 }
 
