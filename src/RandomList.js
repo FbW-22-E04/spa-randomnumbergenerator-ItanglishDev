@@ -1,13 +1,14 @@
 import { useState } from "react";
+import Button from './Button'
 
 function RandomList() {
 
-  const [numbers, setNumbers] = useState(new Array)
+  const [numbers, setNumbers] = useState(new Array(0))
 
   return (
-    <div>
-      <button>Randomize Me</button>
-      <div>{numbers}</div>
+    <div class="italic">
+      <Button />
+      <div></div>
     </div>);
 }
 
